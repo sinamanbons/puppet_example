@@ -35,7 +35,7 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class puppet_master {
+class joseph-vagrant_puppet_master {
 
 
 }

@@ -35,7 +35,10 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class puppet_node {
+class joseph-vagrant_puppet_node {
 
+  file { '/tmp/testing_puppet':
+    content => "THIS IS A TEST 2\n",
+  }
 
 }
