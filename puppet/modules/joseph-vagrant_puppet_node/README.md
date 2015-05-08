@@ -1,4 +1,4 @@
-# puppet_node
+# vagrant_puppet_node
 
 #### Table of Contents
 

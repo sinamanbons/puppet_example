@@ -1,4 +1,4 @@
-# puppet_master
+# vagrant_puppet_master
 
 #### Table of Contents
 

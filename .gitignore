@@ -16,3 +16,6 @@
 # Unecessary files to track
 *.swp
 *~
+
+# removing Vagrant files
+.vagrant
