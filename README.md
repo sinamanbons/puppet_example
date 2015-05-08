@@ -20,7 +20,9 @@ agent spun up for testing purposes.
 ## Description
 
 Puppet master has been set for external ip: 192.168.33.10
+
 Puppet agent has been set for external ip: 192.168.33.11
+
 Puppet dashboard is also present at 192.168.33.10:3000.
 
 Puppet master is set for autosign-ing  anything that has the puppet
