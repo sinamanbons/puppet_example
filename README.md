@@ -25,8 +25,7 @@ Puppet agent has been set for external ip: 192.168.33.11
 
 Puppet dashboard is also present at 192.168.33.10:3000.
 
-Puppet master is set for autosign-ing  anything that has the puppet
-configuration server pointing to our puppet agent
+Puppet master is set for autosign-ing
 
 ## Setup
 
