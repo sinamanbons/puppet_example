@@ -5,7 +5,7 @@
 1. [Overview](#overview)
 2. [Description](#description)
 3. [Setup - The basics of getting started with Puppet Master and Agent](#setup)
-    * [Requirements](#setup-requirements)
+    * [Requirements](#requirements)
     * [Spinning up new vagrant](#vagrant-up)
     * [Login to vagrant box](#login-to-vagrant-box)
     * [Start the puppet agent](#start-the-puppet-agent)
@@ -88,5 +88,6 @@ populate on the vagrant puppet master.
 ## TODO
 
 Code refactoring
+
 Planning on moving to Foreman instead of Puppet Dashboard
 
