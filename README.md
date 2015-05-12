@@ -59,10 +59,10 @@ $ vagrant ssh $ID
 
 ### Start the puppet agent
 
-SSH into the Vagrant box with the name 'agent'. Start the puppet agent
+SSH into the Vagrant box with the name 'agent'. Start the puppet agent as user root
 
 ```sh
-$ puppet agent -t
+$ sudo puppet agent -t
 ```
 
 This will start the certification process and request the puppet master for signing. Since
@@ -88,5 +88,9 @@ populate on the vagrant puppet master.
 
 Code refactoring
 
-Planning on moving to Foreman instead of Puppet Dashboard
+Hiera implementation / ENC solution
+
+Implement Jenkins and Rundeck
+
+Monitoring platform 
 
