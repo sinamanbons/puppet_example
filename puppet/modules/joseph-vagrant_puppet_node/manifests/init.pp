@@ -37,8 +37,34 @@
 #
 class joseph-vagrant_puppet_node {
 
+  # creating a test file
   file { '/tmp/testing_puppet':
     content => "THIS IS A TEST 2\n",
   }
 
+  #spinning up a new mysql server
+  class { '::mysql::server': }
+
+  mysql::db { 'mydb':
+    user      => 'root',
+    password  => 'password',
+    host      => 'localhost',
+  }
+
+  mysql_user { 'root@localhost':
+    ensure                   => 'present',
+    max_connections_per_hour => '60',
+    max_queries_per_hour     => '120',
+    max_updates_per_hour     => '120',
+    max_user_connections     => '10',
+  }
+
+  # granting access to all for user root
+  mysql_grant { 'root@localhost/*.*':
+    ensure      => 'present',
+    options     => ['GRANT'],
+    privileges  => ['ALL'],
+    table       => '*.*',
+    user        => 'root@localhost',
+  }
 }
